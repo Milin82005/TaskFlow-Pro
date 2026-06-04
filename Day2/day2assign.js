@@ -3,13 +3,11 @@ let total = maths + science + english + computer + social;
 let average = total / 5;
 let percent = average;
 let grade;
-
 if(average >= 90) grade = "A";
 else if(average >= 80) grade = "B";
 else if(average >= 70) grade = "C";
 else if(average >= 60) grade = "D";
 else grade = "F";
-
 console.log("STUDENT RESULT REPORT");
 console.log("Name:", name);
 console.log("Roll No:", roll);
