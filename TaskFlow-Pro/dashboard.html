@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow Pro Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2>TaskFlow Pro</h2>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+    </nav>
+
+    <div class="dashboard-container">
+        <section class="hero-section">
+
+    <h1>✨ Turn Your Plans Into Progress</h1>
+
+<p>
+Stay organized, track your work,
+and accomplish more every day.
+</p>
+
+</section>
+
+        <h1 id="welcomeMessage">
+            Welcome
+        </h1>
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <h3>📋 Total Tasks</h3>
+                <p id="totalTasks">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>✅ Completed</h3>
+                <p id="completedTasks">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>⏳ Pending</h3>
+                <p id="pendingTasks">0</p>
+            </div>
+
+        </div>
+
+        <div class="task-form">
+
+            <h2>Add Task</h2>
+
+            <input
+                type="text"
+                id="taskTitle"
+                placeholder="Task Title">
+
+            <textarea
+                id="taskDescription"
+                placeholder="Task Description"></textarea>
+
+            <select id="taskStatus">
+
+                <option value="Pending">
+                    Pending
+                </option>
+
+                <option value="In Progress">
+                    In Progress
+                </option>
+
+                <option value="On Hold">
+                    On Hold
+                </option>
+
+                <option value="Completed">
+                    Completed
+                </option>
+
+            </select>
+
+            <button id="addTaskBtn">
+                Add Task
+            </button>
+
+        </div>
+        <input
+type="text"
+id="searchTask"
+placeholder="Search Tasks">
+<select id="filterStatus">
+
+<option value="All">
+All
+</option>
+
+<option value="Pending">
+Pending
+</option>
+
+<option value="In Progress">
+In Progress
+</option>
+
+<option value="On Hold">
+On Hold
+</option>
+
+<option value="Completed">
+Completed
+</option>
+
+</select>
+        <h2>Your Tasks</h2>
+
+        <div id="taskList"></div>
+
+    </div>
+<div id="toast"></div>
+<footer>
+TaskFlow Pro © 2026
+</footer>
+<script src="dashboard.js"></script>
+
+</body>
+</html>
